@@ -12,14 +12,17 @@ reset-cursor() {
   user-select: none;
 }
 
-reset-layout() {
+reset-box-model() {
+  text-align: center;
+  box-sizing: border-box;
+  background-clip: padding-box;
+}
+
+inline-block() {
   //Adds inline-block reset
   position: relative;
   display: inline-block;
   vertical-align: top;
-  text-align: center;
-  box-sizing: border-box;
-  background-clip: padding-box;
 }
 
 ellipsis() {
