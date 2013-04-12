@@ -1,42 +1,38 @@
 @import nib
 
-reset-base() {
+vendor-prefixes = var-vendor-prefix
+
+reset-base()
   padding: 0;
   margin: 0;
   font: inherit;
   color: inherit;
   background: transparent;
   border: none;
-}
 
-reset-cursor() {
+reset-cursor()
   cursor: pointer;
   user-select: none;
-}
 
-reset-box-model() {
+reset-box-model()
   text-align: center;
   box-sizing: border-box;
   background-clip: padding-box;
-}
 
-inline-block() {
+inline-block()
   position: relative;
   display: inline-block;
   vertical-align: top;
-}
 
-ellipsis() {
+ellipsis()
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-}
 
-disabled() {
+disabled()
   opacity: 0.3;
   cursor: default;
   pointer-events: none;
-}
 
 //position
 
