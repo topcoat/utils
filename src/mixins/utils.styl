@@ -1,3 +1,4 @@
+// Reset
 
 reset-base()
   padding: 0;
@@ -31,7 +32,14 @@ disabled()
   cursor: default;
   pointer-events: none;
 
-//position
+.reset-ui
+  reset-box-model()
+  inline-block()
+  reset-base()
+  reset-cursor()
+  ellipsis()
+
+// Position
 
 left()
   text-align left
