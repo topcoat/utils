@@ -19,18 +19,14 @@ reset-quiet()
   box-shadow none
 
 reset-input()
-  reset-base()
-  reset-box-model()
-  vertical-align top
-  outline none
-
-hide-input()
-  border 0
-  clip rect(0 0 0 0)
+  position absolute
   overflow hidden
   padding 0
-  position absolute
+  border 0
   opacity 0.001
+  z-index 1
+  vertical-align top
+  outline none
 
 reset-cursor()
   cursor: default;
