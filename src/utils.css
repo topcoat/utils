@@ -28,31 +28,31 @@
 %reset-list {
   padding: 0;
   margin: 0;
-  list-style-type none
+  list-style-type: none;
 }
 
 %reset-quiet {
-  background transparent
-  border 1px solid transparent
-  box-shadow none
+  background: transparent;
+  border: 1px solid transparent;
+  box-shadow: none;
 }
 
 %reset-input {
-  @extend %reset-base
-  @extend %reset-box-model
-  vertical-align top
-  outline none
+  extend: %reset-base;
+  extend: %reset-box-model;
+  vertical-align: top;
+  outline: none;
 }
 
 %hide-input {
-  position absolute
-  overflow hidden
-  padding 0
-  border 0
-  opacity 0.001
-  z-index 1
-  vertical-align top
-  outline none
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  opacity: 0.001;
+  z-index: 1;
+  vertical-align: top;
+  outline: none;
 }
 
 %reset-cursor {
@@ -71,9 +71,9 @@
 }
 
 %reset-container {
-  @extend %reset-box-model
-  @extend %reset-overflow
-  word-spacing 0
+  extend: %reset-box-model;
+  extend: %reset-overflow;
+  word-spacing: 0;
 }
 
 %inline-block {
@@ -84,7 +84,7 @@
 
 %ellipsis {
   text-overflow: ellipsis;
-  @extend %reset-overflow
+  extend: %reset-overflow;
 }
 
 %disabled {
