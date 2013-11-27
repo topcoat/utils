@@ -2,6 +2,7 @@
   "name": "topcoat-utils",
   "version": "0.2.0",
   "description": "Utils for Topcoat",
+  "style": "src/utils.css",
   "repository": {
     "type": "git",
     "url": "https://github.com/topcoat/utils.git"
