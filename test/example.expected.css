@@ -1,4 +1,5 @@
-%reset-base {
+.reset-base,
+.reset-input {
   padding: 0;
   margin: 0;
   font: inherit;
@@ -7,26 +8,24 @@
   border: none;
 }
 
-%reset-list {
+.reset-list {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-%reset-quiet {
+.reset-quiet {
   background: transparent;
   border: 1px solid transparent;
   box-shadow: none;
 }
 
-%reset-input {
-  @extend: %reset-base;
-  @extend: %reset-box-model;
+.reset-input {
   vertical-align: top;
   outline: none;
 }
 
-%hide-input {
+.hide-input {
   position: absolute;
   overflow: hidden;
   padding: 0;
@@ -37,39 +36,43 @@
   outline: none;
 }
 
-%reset-cursor {
+.reset-cursor {
   cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
-%reset-box-model {
+.reset-input,
+.reset-box-model,
+.reset-container {
   box-sizing: border-box;
   background-clip: padding-box;
 }
 
-%reset-overflow {
+.reset-overflow,
+.reset-container,
+.ellipsis {
   white-space: nowrap;
   overflow: hidden;
 }
 
-%reset-container {
-  @extend: %reset-box-model;
-  @extend: %reset-overflow;
+.reset-container {
   word-spacing: 0;
 }
 
-%inline-block {
+.inline-block {
   position: relative;
   display: inline-block;
   vertical-align: top;
 }
 
-%ellipsis {
+.ellipsis {
   text-overflow: ellipsis;
-  @extend: %reset-overflow;
 }
 
-%disabled {
+.disabled {
   opacity: 0.3;
   cursor: default;
   pointer-events: none;

@@ -1,0 +1,47 @@
+.reset-base {
+  @extend %reset-base;
+}
+
+.reset-list {
+  @extend %reset-list;
+}
+
+.reset-quiet {
+  @extend %reset-quiet;
+}
+
+.reset-input {
+  @extend: %reset-input;
+}
+
+.hide-input {
+  @extend %hide-input;
+}
+
+.reset-cursor {
+  @extend %reset-cursor;
+}
+
+.reset-box-model {
+  @extend %reset-box-model;
+}
+
+.reset-overflow {
+  @extend %reset-overflow;
+}
+
+.reset-container {
+  @extend %reset-container;
+}
+
+.inline-block {
+  @extend %inline-block;
+}
+
+.ellipsis {
+  @extend %ellipsis;
+}
+
+.disabled {
+  @extend %disabled;
+}
