@@ -1,8 +1,11 @@
 {
   "name": "topcoat-utils",
-  "version": "0.4.0",
   "description": "Utils for Topcoat",
-  "style": "src/utils.css",
+  "style": "./src/utils.css",
+  "scripts": {
+    "test": "ava test",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/topcoat/utils.git"
@@ -15,8 +18,33 @@
     "Garth Braithwaite <garthdb@gmail.com> (http://garthdb.com)"
   ],
   "author": "Kristofer Joseph <kristoferjoseph@gmail.com> (http://kristoferjoseph.com/)",
-  "license": "Apache2",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/topcoat/topcoat/issues"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-register": "^6.14.0",
+    "resin": "^1.1.0",
+    "semantic-release": "^4.3.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
   }
 }
