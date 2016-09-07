@@ -39,7 +39,7 @@
     "babel-core": "^6.14.0",
     "babel-preset-es2015": "^6.14.0",
     "babel-register": "^6.14.0",
-    "resin": "^1.1.0",
+    "resin": "^1.2.1",
     "semantic-release": "^4.3.5"
   },
   "config": {
